@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:paddingBottom="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/visby"
+                android:gravity="center"
+                android:text="Hospital Name"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="9dp"
+                android:background="#8003A9F4"
+                app:cardBackgroundColor="#8003A9F4"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="-10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3.25">
+
+                        <TextView
+                            android:id="@+id/none"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="-10dp"
+                            android:layout_weight="1.2"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1.025"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Total↓"
+                            android:textColor="#FBA11C"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="17sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/vaccant"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1.025"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Vaccant↓"
+                            android:textColor="#4CAF50"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="17sp"
+                            app:autoSizeTextType="uniform" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3.25">
+
+                        <TextView
+                            android:id="@+id/beds"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="-10dp"
+                            android:layout_weight="1.2"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Beds "
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/totalbeds"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1.025"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="60"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/vaccantbeds"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1.025"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="25"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3.25">
+
+                        <TextView
+                            android:id="@+id/oxygen"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="-10dp"
+                            android:layout_weight="1.2"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Oxygen"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/totaloxi"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1.025"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="15"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/vaccantoxi"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1.025"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="8"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3.25">
+
+                        <TextView
+                            android:id="@+id/venti"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="-10dp"
+                            android:layout_weight="1.2"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Ventilators"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/totalventi"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1.025"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="10"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/vaccantventi"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1.025"
+                            android:fontFamily="@font/visby"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="7"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:autoSizeMaxTextSize="16.5sp"
+                            app:autoSizeTextType="uniform" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/last_update"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="2dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/visby"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Last Updated : 11:30 AM 15/09/2020"
+                android:textColor="@android:color/black"
+                app:autoSizeTextType="uniform" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/visby"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:text="Contact : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/contactno"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/visby"
+                    android:singleLine="true"
+                    android:text="885459696" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="0.8"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/visby"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Address : "
+                android:textColor="@android:color/black"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
